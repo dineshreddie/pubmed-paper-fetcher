@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"  # Required project name
+version = "0.1.0"  # Required project version
+description = "A CLI tool to fetch research papers from PubMed"
+authors = ["Dinesh Reddy <banaladineshreddy256@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+pandas = "^2.0.3"
+argparse = "^1.4.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+get-papers-list = "scripts.get_papers:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
